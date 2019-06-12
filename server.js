@@ -14,7 +14,8 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
-require("./controllers/burgers_controller.js")(app);
+var routes = require("./controllers/burgers_controller.js");
+app.use(routes);
 
 // Starts the server to begin listening
 // =============================================================
