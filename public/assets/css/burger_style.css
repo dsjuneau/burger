@@ -21,6 +21,7 @@ body {
   width: 960px;
   display: grid;
   grid-template-columns: 2fr 2fr;
+  grid-column-gap: 20px;
 }
 
 .wrapper h2 {
@@ -44,4 +45,18 @@ body {
 .addarea button {
   display: block;
   margin: 10px auto;
+}
+
+#ready {
+  list-style: none;
+}
+
+.readybtn {
+  margin: auto 0;
+  float: right;
+}
+.readyitem {
+  text-align: center;
+  background-color: #dddddd;
+  height: 25px;
 }
