@@ -47,7 +47,8 @@ body {
   margin: 10px auto;
 }
 
-#ready {
+#ready,
+#devoured {
   list-style: none;
 }
 
