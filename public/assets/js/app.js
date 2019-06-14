@@ -20,7 +20,7 @@ window.onload = () => {
 
   //Listeners activated
   for (let i = 0; i < devourButton.length; i++) {
-    devourButton[0].addEventListener("click", devour);
+    devourButton[i].addEventListener("click", devour);
   }
 
   addButton.addEventListener("click", addBurger);
