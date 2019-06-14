@@ -4,12 +4,13 @@
 </div>
 
 <div class="wrapper">
-    <h2>These are ready to eat</h2>
+    <h2>These are ready to eat:</h2>
     <h2>You ate:</h2>
     <ul id="ready">
         {{#each burgers}}
         {{#unless devoured}}
-        <li class="readyitem">{{burger_name}}<button type="submit" class="readybtn">Devour</button></li>
+        <li class="readyitem">{{id}}. {{burger_name}}<button data-id={{id}} type="submit"
+                class="readybtn">Devour</button></li>
         {{/unless}}
         {{/each}}
 
@@ -26,7 +27,7 @@
 </div>
 
 
-
+cd
 <div class="addarea">
     <h2>Add a burger</h2>
     <textarea name="" id="addburger" cols="50" rows="4"></textarea>
