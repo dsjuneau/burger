@@ -13,9 +13,14 @@ window.onload = () => {
     event.preventDefault();
     let data = { burger: document.forms["main"].elements["addburger"].value };
     console.log(data);
-    fetch("/api/burgers/", { method: "POST", body: data }).then(
-      location.reload()
-    );
+    fetch("/api/burgers/", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    }).then(location.reload());
   }
 
   //Listeners activated
